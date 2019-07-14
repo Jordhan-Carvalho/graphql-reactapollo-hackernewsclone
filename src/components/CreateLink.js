@@ -19,7 +19,7 @@ const CreateLink = ({ history }) => {
   const [description, setDesc] = useState("");
   const [url, setUrl] = useState("");
 
-  //could be used as onCompleted on the <Mutation />
+  //should have used onCompleted on the <Mutation />, and deleted the form tag
   const onSubmit = async e => {
     e.preventDefault();
     history.push("/new/1");
